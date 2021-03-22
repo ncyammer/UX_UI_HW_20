@@ -1,0 +1,555 @@
+/* Topline */
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.centerImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    float: center;
+}
+
+.right {
+    float: right;
+}
+
+.pageheader {
+    text-align: center;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Audiowide', cursive;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    font-size: 42px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+.cardheader {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: 'Audiowide', cursive;
+    line-height: 1.29;
+    letter-spacing: normal;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+}
+
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav Bar */
+
+.topnav {
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    z-index: 1000;
+    margin-bottom: 40px;
+}
+
+.navigation {
+    list-style-type: none;
+    height: 26px;
+    padding: 27px 0px;
+    margin: 0px 140px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.topnav li {
+    height: 20px;
+    padding: 0px 20px;
+    margin: 0px 20px;
+}
+
+.topnav li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Audiowide';
+    font-size: 18px;
+}
+
+li a:hover {
+    color: #FF0000;
+}
+
+#hamburgermenu {
+    height: 25px;
+    width: 25px;
+    display: none;
+    position: absolute;
+}
+
+.openMenu {
+    position: absolute;
+}
+
+.closeMenu {
+    position: absolute;
+    display: none;
+}
+
+.mobilenavigation {
+    display: none;
+    z-index: 105;
+}
+
+/* Logo Area */
+
+.mainArea {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 140px;
+    margin-right: 140px;
+    align-items: center;
+    text-align: center;
+}
+
+.mainLogo h1 {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.logo {
+    max-height: 250px;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+/* Medium Cards */
+
+#mediumCards {
+    margin: 40px 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    justify-content: center;
+    grid-template-areas: "uxdesignCard artworkCard videoCard";
+}
+
+#mediumCards a {
+    text-decoration: none;
+}
+
+#uxdesignCard {
+    grid-area: uxdesignCard;
+    background-image: url(../images/ux-hp-card@3x.png), url(../images/alternate\ medium\ card.png);
+    background-color: #484848;
+}
+
+#artworkCard {
+    grid-area: artworkCard;
+    background-image: url(../images/artwork-hp-card@3x.jpg), url(../images/alternate\ medium\ card.png);
+    background-color: #484848;
+}
+
+#videoCard {
+    grid-area: videoCard;
+    background-image: url(../images/video-hp-card@3x.png), url(../images/alternate\ medium\ card.png);
+    background-color: #484848;
+}
+
+.mediumCardstyle {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+    transition: all .2s linear;
+    height: 280px;
+}
+
+.mediumCardstyle h4 {
+    transition: all .2s linear;
+}
+
+.mediumCardstyle:hover {
+    transform: translate(0, -10%);
+    filter: drop-shadow(0px 25px 10px rgba(0, 0, 0, 0.5))
+}
+
+.mediumCardstyle:hover h4 {
+    color: #FF0000;
+    font-size: 28px;
+}
+
+.mediumCardstyle:focus {
+    border: 3px solid #f00;
+}
+
+/* .mediumCardstyle img{
+    width: 320px;
+    height: 200px;
+} */
+
+.heading {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 15px;
+    color: white;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-family: 'Audiowide', cursive;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+}
+
+/* Footer */
+
+footer {
+    height: 104px;
+    padding: 80px 140px 80px 140px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h5 {
+    color: white;
+    font-family: 'audiowide';
+    margin: 0;
+}
+
+.footerIcons {
+    display: flex;
+    object-fit: contain;
+    margin-left: 20px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.linkedIn, .resume {
+    margin: 0px 0px 0px 40px;
+}
+
+/* ABOUT PAGE */
+
+.bio {
+    margin: 40px 140px;
+    padding: 0px 80px;
+}
+
+/* UX PAGE */
+
+#mainAreauxdesign {
+    height: 250px;
+    margin: 40px 140px;
+    display: grid;
+    grid-template-columns: 250px auto auto;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "uxLogo uxName uxName" "uxLogo uxBio uxBio";
+}
+
+#uxLogo {
+    max-height: 250px;
+    max-width: 250px;
+    justify-content: center;
+    grid-area: uxLogo;
+}
+
+#uxLogo img {
+    height: 100%;
+    width: 100%;
+}
+
+#uxName {
+    margin: none;
+    padding-left: 40px;
+    align-self: center;
+    grid-area: uxName;
+}
+
+#uxName h2 {
+    margin: 0;
+}
+
+#uxBio {
+    text-align: left;
+    padding-left: 40px;
+    align-self: center;
+    grid-area: uxBio;
+}
+
+#uxBio h4 {
+    margin: 0;
+}
+
+/* Casestudy Cards */
+
+#casestudies {
+    margin: 40px 140px 80px 140px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "fcccaseStudy wbwcaseStudy";
+}
+
+.casestudyCard {
+    height: 312px;
+    width: 500px;
+    text-decoration: none;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cardlink {
+    margin: 0 auto 0 auto;
+}
+
+.casestudyCard a {
+    text-decoration: none;
+}
+
+.casestudyCard:hover {
+    background-size: 105%;
+}
+
+#fcccaseStudy {
+    background-image: url(../images/fcc-card.png);
+    grid-area: fcccaseStudy;
+    place-self: center;
+}
+
+#wbwcaseStudy {
+    background-image: url(../images/wbw-card.png);
+    grid-area: wbwcaseStudy;
+    place-self: center;
+}
+
+.cardHover {
+    height: 282px;
+    padding: 15px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: transparent;
+    background-color: transparent;
+    z-index: 100;
+    transition: all .3s ease-in-out
+}
+
+.cardHover:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ALTERNATE CARD HOVER (PAIRED WITH JQUERY,
+USE ONLY .cardHover and .cardHover p) */
+/* .cardHover {
+    height: 15%;
+    padding: 15px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    transition: all .3s ease-in-out
+}
+.cardHover p {
+    display: none;
+    transition: all .3s ease-in-out
+} */
+/* .casestudyCard:hover .cardHover{
+    height: 100%;
+    transition: all .3s ease-in-out
+}
+.casestudyCard:hover .cardHover p{
+    display: inline;
+    transition: all .3s ease-in-out;
+    animation: fadeIn ease-in-out .3s;
+}
+@keyframes fadeIn{
+    0% {
+        display: inline;
+        opacity: 0;
+    }
+    100% {opacity: 1;}
+} */
+
+/* ARTWORK PAGE */
+
+#artwork {
+    margin: 80px 140px 80px 140px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "illustration calligraphy" "logoDesign eventBanner";
+}
+
+#illustrationCard {
+    background-image: url(../images/artwork/budoCard.png), url(../images/alternate_card.png);
+    grid-area: illustration;
+    place-self: center;
+}
+
+#calligraphy {
+    background-image: url(../images/artwork/caligraphyCard.png), url(../images/alternate_card.png);
+    grid-area: calligraphy;
+    place-self: center;
+}
+
+#logoDesign {
+    background-image: url(../images/artwork/logoCard.png), url(../images/alternate_card.png);
+    grid-area: logoDesign;
+    place-self: center;
+}
+
+#eventBanner {
+    background-image: url(../images/artwork/eventbannerCard.png), url(../images/alternate_card.png);
+    grid-area: eventBanner;
+    place-self: center;
+}
+
+/* VECTOR ART PAGE */
+
+#vectorIllustration {
+    margin: 80px 140px 80px 140px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "rain budo" "jesus .";
+}
+
+#rainCard {
+    background-image: url(../images/artwork/rainCard.png), url(../images/alternate_card.png);
+    grid-area: rain;
+    place-self: center;
+}
+
+#budoCard {
+    background-image: url(../images/artwork/budoCard.png), url(../images/alternate_card.png);
+    grid-area: budo;
+    place-self: center;
+}
+
+#jesusCard {
+    background-image: url(../images/artwork/pabelCard.png), url(../images/alternate_card.png);
+    grid-area: jesus;
+    place-self: center;
+}
+
+/* VIDEO PAGE */
+
+#video {
+    margin: 80px 140px 80px 140px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "editingreel iwatch" "keikotips specialeffects";
+}
+
+#editingReelCard {
+    background-image: url(../images/alternate_card.png);
+    grid-area: editingreel;
+    place-self: center;
+}
+
+#iwatchCard {
+    background-image: url(../images/video/iwatch-card.png), url(../images/alternate_card.png);
+    grid-area: iwatch;
+    place-self: center;
+}
+
+#keikotipsCard {
+    background-image: url(../images/video/keikotips-card.png), url(../images/alternate_card.png);
+    grid-area: keikotips;
+    place-self: center;
+}
+
+#specialeffectsCard {
+    background-image: url(../images/alternate_card.png);
+    grid-area: specialeffects;
+    place-self: center;
+}

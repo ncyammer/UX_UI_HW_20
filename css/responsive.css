@@ -1,0 +1,293 @@
+@media only screen and (min-width: 1450px){
+    .casestudyCard{
+        height: 468px;
+        width: 750px;
+    }
+    .cardHover{
+        height: 468px;
+
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .topnav li a {
+        font-size: 16px;
+    }
+    #mediumCards {
+        margin: 40px 80px;
+    }
+
+    #mainAreauxdesign {
+        height: auto;
+        margin: 20px 20px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        text-align: center;
+        row-gap: 20px;
+        grid-template-areas: "uxLogo" "uxName" "uxBio";
+    }
+    #uxLogo {
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .mobilenavigation{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation {
+        display: none;
+    }
+    .topnav{
+        width:100%;
+    }
+    #hamburgermenu {
+        float: left;
+        display: flex;
+        align-items: center;
+        margin: 27.5px;
+    }
+    .mobilenavigation {
+        list-style-type: none;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        padding-left: 0px;
+        margin: 0px;
+        background-color: black;
+    }
+    
+    .mobilenavigation li {
+        padding-left: 20px;
+        height: 55px;
+        width: 320px;
+        background-color: black;
+        border: 2px solid white;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .mobilenavigation li a {
+        font-family: Audiowide;
+        font-size: 16pt;
+        color: white;
+        text-decoration: none;
+        padding: 14.5px 0px 14.5px 0px;
+    }
+    .bio {
+        margin: 70px 70px;
+        padding: 0;
+    }
+    #mediumCards {
+        margin: 20px 20px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        grid-template-areas: "uxdesignCard" "artworkCard" "videoCard";
+    }
+    #uxdesignCard, #artworkCard, #videoCard{
+        height: 350px;
+    }
+    
+    .mediumCardstyle {
+        background-size: cover;
+    }
+    /* Footer */
+    footer {
+        height: 250px;
+        padding: 40px 20px;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    .contact {
+        padding-bottom: 40px;
+    }
+    .footerIcons{
+        margin: 0;
+    }
+    .linkedIn, .resume {
+        margin: 0px 20px 0px 20px;
+    }
+
+    /* UX PAGE */
+    #casestudies {
+        margin: 20px 20px 20px 20px;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        grid-template-areas: "fcccaseStudy" "wbwcaseStudy"
+    }
+    #artwork {
+        margin: 20px 20px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "illustration" "calligraphy" "logoDesign" "eventBanner";
+    }
+    #vectorIllustration {
+        margin: 20px 20px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "rain" "budo" "jesus";
+    }
+    #video {
+        margin: 20px 20px 20px 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "editingreel" "iwatch" "keikotips" "specialeffects";
+    }
+    .casestudyCard {
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cardHover {
+        height: 20%;
+        padding: 15px;
+        display: grid;
+        align-items: end;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 100;
+    }
+    .cardHover p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Typography */
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 14pt;
+    }
+    li {
+        font-size: 14pt;
+    }
+    /* Navigation */
+    .topnav {
+        height: 56px;
+        width: 100%;
+    }
+    #hamburgermenu {
+        display: flex;
+        align-items: center;
+        margin: 15.5px 20px;
+    }
+    .mobilenavigation {
+        top: 56px;
+    }
+    .mobilenavigation li {
+        padding-left: 14px;
+    }
+    /* LANDING PAGE */
+    .mainArea {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .logo {
+        height: 150px;
+        width: 150px;
+    }
+    .mediumCardstyle {
+        margin: 0;
+    }
+    #mediumCards {
+        margin: 20px 20px;
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        grid-template-areas: "uxdesignCard" "artworkCard" "videoCard";
+    }
+    /* Footer */
+    footer {
+        height: 210px;
+        padding: 40px 20px;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    .contact {
+        padding-bottom: 20px;
+    }
+    .footerIcons {
+        padding-top: 20px;
+        margin: 0;
+    }
+    .footerIcons img {
+        height: 50px;
+        width: 50px;
+    }
+    /* ABOUT PAGE */
+    .bio {
+        margin: 20px 20px;
+        padding: 0;
+    }
+    /* UX PAGE */
+    #mainAreauxdesign {
+        grid-template-rows: 150px auto auto;
+    }
+    #uxLogo {
+        max-height: 150px;
+        max-width: 150px;
+        justify-self: center;
+    }
+    #uxName {
+        padding-left: 0;
+    }
+    #uxBio {
+        text-align: center;
+        padding: 0;
+    }
+    #casestudies {
+        margin: 20px;
+    }
+    #artwork {
+        width: 100%;
+        margin: 20px;
+    }
+    #video {
+        margin: 20px;
+    }
+    #vectorIllustration {
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #uxdesignCard, #artworkCard, #videoCard{
+        width: 320px;
+        height: 200px;
+        margin: 0;
+    }
+    #mediumCards a{
+        justify-self:center
+    }
+    .cardlink, .casestudyCard{
+        width: 320px;
+        height: 200px;
+        margin: 0;
+        justify-self:center
+    }
+}
