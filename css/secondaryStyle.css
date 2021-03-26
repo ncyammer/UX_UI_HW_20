@@ -12,6 +12,10 @@
 .secondaryPageHeader h1{
     color: white;
 }
+.secondaryPageHeader h4{
+    color: white;
+    font-weight: 400;
+}
 .secondaryPageTitle{
     grid-area: pageTitle;
     align-self: center;
