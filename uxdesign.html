@@ -4,63 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Yamamoto Portfolio</title>
+    <title>UX Design - Nick Yamamoto Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/loading.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/secondaryResponsive.css" rel="stylesheet" type="text/css">
 </head>
 
 <header>
     <div class="topnav">
         <ul class=navigation>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
             <li><a href="uxdesign.html">UX DESIGN</a></li>
             <li><a href="artwork.html">ARTWORK</a></li>
             <li><a href="video.html">VIDEO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
             <li><a href=#>CONTACT</a></li>
         </ul>
         <div id="hamburgermenu">
             <img class=openMenu src="icons/hamburger-menu.png" alt="menu">
             <img class=closeMenu src="icons/close.png" alt="close">
         </div>
-    </div>
+    </div>    
     <ul class=mobilenavigation>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
         <li><a href="uxdesign.html">UX DESIGN</a></li>
         <li><a href="artwork.html">ARTWORK</a></li>
         <li><a href="video.html">VIDEO</a></li>
+        <li><a href="about.html">ABOUT</a></li>
         <li><a href=#>CONTACT</a></li>
     </ul>
 </header>
 
 <body>
-<section id="mainAreauxdesign">
-    <div id="uxLogo">
-        <img src="images/mylogo.png" alt="LOGO">
-    </div>
-    <div id="uxName"><h2>NICK YAMAMOTO</h2></div>
+<section id="mainAreauxdesign" class="pageBanner">
+    <div id="uxName"><h2>UX DESIGN</h2></div>
     <div id="uxBio">
         <h4>UX Designer with a keen eye for identifying issues in work-flows and ideating solutions to address them. Highly skilled in Marketing, User Research/Testing, Wireframing, and Prototyping. Aiming to help users accomplish their tasks in a cohesive, streamlined experience.</h4>
     </div>
 </section>
 
+<!-- <section class="secondaryPageHeader" id="mainAreauxdesign">
+    <h1 class="secondaryPageTitle">UX DESIGN</h1>
+    <h4 class="secondaryPageDes">UX Designer with a keen eye for identifying issues in work-flows and ideating solutions to address them. Highly skilled in Marketing, User Research/Testing, Wireframing, and Prototyping. Aiming to help users accomplish their tasks in a cohesive, streamlined experience.</h4>
+</section> -->
+
 <section id="casestudies">
-    <div id="fcccaseStudy" class="casestudyCard">
-        <div class="cardHover">
-            <h4 class="cardheader">FCC Website Redesign</h4>
-            <p>An evaluation and proposed redesign of the Federal Communications Commission (FCC) website at the end of 2020.</p>
+    <a class="cardlink" href="ux-sub/fccCaseStudy.html">
+        <div id="fcccaseStudy" class="casestudyCard">
+            <div class="cardHover">
+                <h4 class="cardheader">FCC Website Redesign</h4>
+                <p>An evaluation and proposed redesign of the Federal Communications Commission (FCC) website at the end of 2020.</p>
+            </div>
         </div>
-    </div>
-    <div id="wbwcaseStudy" class="casestudyCard">
-        <div class="cardHover">
-            <h4 class="cardheader">Week-by-week Calculator Template</h4>
-            <p>A simple solution to streamline the process of calculating the media spend by week of advertising campaigns.</p>
+    </a>
+    <a class="cardlink" href="ux-sub/wbwCaseStudy.html">
+        <div id="wbwcaseStudy" class="casestudyCard">
+            <div class="cardHover">
+                <h4 class="cardheader">Week-by-week Calculator Template</h4>
+                <p>A simple solution to streamline the process of calculating the media spend by week of advertising campaigns.</p>
+            </div>
         </div>
-    </div>
+    </a>
 </section>
 
 <footer>
@@ -83,12 +90,6 @@
         </a>
     </div>
 </footer>
-
-<div class="loadingScreen">
-    <div class="firstbox"></div>
-    <div class="secondbox"></div>
-    <div class="thirdbox"></div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="js/index.js"></script>

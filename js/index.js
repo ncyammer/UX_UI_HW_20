@@ -1,7 +1,7 @@
 function fade() {
     $('.loadingScreen').fadeOut("slow");
     }
-    setTimeout(fade, 2000);
+    setTimeout(fade, 2000);  
 
 $('#hamburgermenu').on("click", function(){
     $(".mobilenavigation").slideToggle();
@@ -10,20 +10,29 @@ $('#hamburgermenu').on("click", function(){
 });
 
 // ALTERNATE CARD HOVER (PAIRED WITH CSS)
-// $('.casestudyCard').hover(function(){
-//     $(this).css("background-size", "110%");
-//     $(this).find('.cardHover').css("height", "100%");
-//     if($(this).has("p")){
-//         $(this).find("p").css("display", "inline").animate({opacity:1});
-//     } else{
-//         $(this).find("p").css("display", "none");
-//     }}, function() {
-//         $(this).find('.cardHover').css("height", "15%");
-//         if ($(this).has("p") || $(this).find("p").css("opacity") == "1") {
-//             $(this).find("p").css("display", "none");
-//         } else {$(this).find("p").css("display", "none");}
-//         $(this).css("background-size", "100%");
-//     });
+$('.casestudyCard').hover(function(){
+    $(this).css("background-size", "110%");
+    $(this).find('.cardHover').css("height", "100%");
+    if($(this).has("p")){
+        $(this).find("p").css("display", "inline").animate({opacity:1});
+    } else{
+        $(this).find("p").css("display", "none");
+    }}, function() {
+        $(this).find('.cardHover').css("height", "15%");
+        if ($(this).has("p") || $(this).find("p").css("opacity") == "1") {
+            $(this).find("p").css("display", "none");
+        } else {$(this).find("p").css("display", "none");}
+        $(this).css("background-size", "100%");
+    });
+
+$('.carousel-item').hover(function(){
+    $(this).find('.carousel-caption p').css("opacity", "1");},
+    function(){$(this).find('.carousel-caption p').css("opacity", "0");
+});
+
+// if($(window).width() < 600){
+//     $('#coverLB').modal("display","none"); 
+//  } else{}
 
 // var w = screen.width;
 // if (screen.width < 500){

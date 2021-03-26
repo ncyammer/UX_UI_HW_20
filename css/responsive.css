@@ -1,11 +1,11 @@
 @media only screen and (min-width: 1450px){
+
     .casestudyCard{
         height: 468px;
         width: 750px;
     }
     .cardHover{
-        height: 468px;
-
+        height: 20%;
     }
 }
 
@@ -19,17 +19,39 @@
 
     #mainAreauxdesign {
         height: auto;
-        margin: 20px 20px;
+        margin: 0px;
+        /* margin-top: 80px; */
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto;
         justify-content: center;
         text-align: center;
         row-gap: 20px;
-        grid-template-areas: "uxLogo" "uxName" "uxBio";
+        grid-template-areas: "uxName" "uxBio";
     }
-    #uxLogo {
-        justify-self: center;
+    #mainAreaart {
+        height: auto;
+        margin: 0px;
+        /* margin-top: 80px; */
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        text-align: center;
+        row-gap: 20px;
+        grid-template-areas: "artName" "artBio";
+    }
+    #mainAreavideo {
+        height: auto;
+        margin: 0px;
+        /* margin-top: 80px; */
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        text-align: center;
+        row-gap: 20px;
+        grid-template-areas: "videoName" "videoBio";
     }
 }
 
@@ -98,7 +120,7 @@
     }
     /* Footer */
     footer {
-        height: 250px;
+        height: 250px !important;
         padding: 40px 20px;
         flex-direction: column;
         align-content: center;
@@ -115,6 +137,15 @@
     }
 
     /* UX PAGE */
+
+    #mainAreauxdesign, #mainAreaart, #mainAreavideo{
+        height: 250px;
+        padding: 40px 40px;
+        margin: 0;
+        /* margin-top: 80px; */
+        grid-template-rows: 20% 80%;
+    }
+
     #casestudies {
         margin: 20px 20px 20px 20px;
         grid-template-columns: 1fr;
@@ -124,15 +155,15 @@
     #artwork {
         margin: 20px 20px 20px 20px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "illustration" "calligraphy" "logoDesign" "eventBanner";
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "rain" "illustration" "jesus" "calligraphy" "logoDesign" "eventBanner";
     }
-    #vectorIllustration {
+    /* #vectorIllustration {
         margin: 20px 20px 20px 20px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: "rain" "budo" "jesus";
-    }
+    } */
     #video {
         margin: 20px 20px 20px 20px;
         grid-template-columns: 1fr;
@@ -178,10 +209,14 @@
         font-size: 16px;
     }
     p {
-        font-size: 14pt;
+        font-size: 16px;
     }
     li {
-        font-size: 14pt;
+        font-size: 16px;
+    }
+    .caption{
+        font-family: 'Roboto', sans-serif;
+        font-size: 10pt;
     }
     /* Navigation */
     .topnav {
@@ -201,7 +236,7 @@
     }
     /* LANDING PAGE */
     .mainArea {
-        margin-top: 20px;
+        /* margin-top: 76px; */
         margin-bottom: 20px;
         margin-left: 20px;
         margin-right: 20px;
@@ -243,35 +278,51 @@
         margin: 20px 20px;
         padding: 0;
     }
+
+    .pageBanner{
+        margin-top: 76px;
+    }
+
     /* UX PAGE */
     #mainAreauxdesign {
-        grid-template-rows: 150px auto auto;
+        height: 80px;
+        /* margin-top: 56px; */
+        grid-template-rows: 1fr;
+        grid-template-areas: "uxName";
+        padding: 20px;
     }
-    #uxLogo {
-        max-height: 150px;
-        max-width: 150px;
-        justify-self: center;
+    #mainAreaart {
+        height: 80px;
+        /* margin-top: 56px; */
+        grid-template-rows: 1fr;
+        grid-template-areas: "artName";
+        padding: 20px;
     }
-    #uxName {
+    #mainAreavideo {
+        height: 80px;
+        /* margin-top: 56px; */
+        grid-template-rows: 1fr;
+        grid-template-areas: "videoName";
+        padding: 20px;
+    }
+    #uxName, #artName, #videoName {
         padding-left: 0;
     }
-    #uxBio {
-        text-align: center;
-        padding: 0;
+    #uxBio, #artBio, #videoBio {
+        display: none;
     }
     #casestudies {
         margin: 20px;
     }
     #artwork {
-        width: 100%;
         margin: 20px;
     }
     #video {
         margin: 20px;
     }
-    #vectorIllustration {
+    /* #vectorIllustration {
         margin: 20px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 500px) {

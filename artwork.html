@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick Yamamoto Portfolio</title>
+    <title>Artwork - Nick Yamamoto Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/loading.css" rel="stylesheet" type="text/css">
@@ -16,52 +16,77 @@
     <div class="topnav">
         <ul class=navigation>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
             <li><a href="uxdesign.html">UX DESIGN</a></li>
             <li><a href="artwork.html">ARTWORK</a></li>
             <li><a href="video.html">VIDEO</a></li>
+            <li><a href="about.html">ABOUT</a></li>
             <li><a href=#>CONTACT</a></li>
         </ul>
         <div id="hamburgermenu">
             <img class=openMenu src="icons/hamburger-menu.png" alt="menu">
             <img class=closeMenu src="icons/close.png" alt="close">
         </div>
-    </div>
+    </div>    
     <ul class=mobilenavigation>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
         <li><a href="uxdesign.html">UX DESIGN</a></li>
         <li><a href="artwork.html">ARTWORK</a></li>
         <li><a href="video.html">VIDEO</a></li>
+        <li><a href="about.html">ABOUT</a></li>
         <li><a href=#>CONTACT</a></li>
     </ul>
 </header>
 
-<h1 class="pageheader">ARTWORK</h1>
+<section id="mainAreaart" class="pageBanner">
+    <div id="artName"><h2>ARTWORK</h2></div>
+    <div id="artBio">
+        <h4>Skilled in vector illustration and able to apply in logo and advertising banner design. Casual practitioner of Chinese calligraphy.</h4>
+    </div>
+</section>
 
 <section id="artwork">
-    <a class="cardlink" href="vectorIllustration.html">
-        <div id="illustrationCard" class="casestudyCard">
+    <a class="cardlink" href="art-sub/rainSeries.html">
+        <div id="rainCard" class="casestudyCard">
             <div class="cardHover">
-                <h4 class="cardheader">Vector Illustration</h4>
+                <h4 class="cardheader">Rain Series</h4>
             </div>
         </div>
     </a>
-    <div id="calligraphy" class="casestudyCard">
-        <div class="cardHover">
-            <h4 class="cardheader">Calligraphy</h4>
+    <a class="cardlink" href="art-sub/budoSeries.html">
+        <div id="budoCard" class="casestudyCard">
+            <div class="cardHover">
+                <h4 class="cardheader">Budo Series</h4>
+            </div>
         </div>
-    </div>
-    <div id="logoDesign" class="casestudyCard">
-        <div class="cardHover">
-            <h4 class="cardheader">Logo Design</h4>
+    </a>
+    <a class="cardlink" href="art-sub/jesusSeries.html">
+        <div id="jesusCard" class="casestudyCard">
+            <div class="cardHover">
+                <h4 class="cardheader">Jesus Series - Book Covers</h4>
+            </div>
         </div>
-    </div>
-    <div id="eventBanner" class="casestudyCard">
-        <div class="cardHover">
-            <h4 class="cardheader">Event Banners</h4>
+    </a>
+    <a class="cardlink" href="art-sub/calligraphy.html">
+        <div id="calligraphy" class="casestudyCard">
+            <div class="cardHover">
+                <h4 class="cardheader">Calligraphy</h4>
+            </div>
         </div>
-    </div>
+    </a>
+    <a class="cardlink" href="art-sub/logoDesign.html">
+        <div id="logoDesign" class="casestudyCard">
+            <div class="cardHover">
+                <h4 class="cardheader">Logo Design</h4>
+            </div>
+        </div>
+    </a>
+    <a class="cardlink" href="art-sub/eventBanners.html">
+        <div id="eventBanner" class="casestudyCard">
+            <div class="cardHover">
+                <h4 class="cardheader">Event Banners</h4>
+            </div>
+        </div>
+    </a>
 </section>
 
 <footer>
@@ -84,12 +109,6 @@
         </a>
     </div>
 </footer>
-
-<div class="loadingScreen">
-    <div class="firstbox"></div>
-    <div class="secondbox"></div>
-    <div class="thirdbox"></div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="js/index.js"></script>

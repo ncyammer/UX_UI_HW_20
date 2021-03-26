@@ -24,12 +24,7 @@ body {
     float: right;
 }
 
-.pageheader {
-    text-align: center;
-}
-
 /* Typography */
-
 h1 {
     font-family: 'Audiowide', cursive;
     font-size: 48px;
@@ -69,6 +64,11 @@ p {
     font-size: 16pt;
 }
 
+.caption{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+}
+
 li {
     font-family: 'Roboto', sans-serif;
     font-size: 16pt;
@@ -80,6 +80,10 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.disabled{
+    color:grey;
 }
 
 /* Nav Bar */
@@ -94,7 +98,6 @@ a {
     position: relative;
     top: 0px;
     z-index: 1000;
-    margin-bottom: 40px;
 }
 
 .navigation {
@@ -287,6 +290,28 @@ footer a {
     margin: 0px 0px 0px 40px;
 }
 
+/* PAGE BANNERS */
+.pageBanner{
+    height: 300px;
+    padding: 40px 140px;
+    /* margin-top: 80px; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+}
+
+.pageBanner h2, h4{
+    color: white;
+}
+
+.pageBanner h4{
+    font-weight: 400;
+}
+
+.pageheader{
+    text-align: center;
+}
+
 /* ABOUT PAGE */
 
 .bio {
@@ -297,29 +322,17 @@ footer a {
 /* UX PAGE */
 
 #mainAreauxdesign {
-    height: 250px;
-    margin: 40px 140px;
-    display: grid;
-    grid-template-columns: 250px auto auto;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: "uxLogo uxName uxName" "uxLogo uxBio uxBio";
-}
-
-#uxLogo {
-    max-height: 250px;
-    max-width: 250px;
-    justify-content: center;
-    grid-area: uxLogo;
-}
-
-#uxLogo img {
-    height: 100%;
-    width: 100%;
+    grid-template-areas: "uxName" "uxBio";
+    background-color: #484848;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/ux-hp-card@3x.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 #uxName {
     margin: none;
-    padding-left: 40px;
+    padding-left: 0px;
     align-self: center;
     grid-area: uxName;
 }
@@ -330,7 +343,7 @@ footer a {
 
 #uxBio {
     text-align: left;
-    padding-left: 40px;
+    padding-left: 0px;
     align-self: center;
     grid-area: uxBio;
 }
@@ -374,10 +387,6 @@ footer a {
     text-decoration: none;
 }
 
-.casestudyCard:hover {
-    background-size: 105%;
-}
-
 #fcccaseStudy {
     background-image: url(../images/fcc-card.png);
     grid-area: fcccaseStudy;
@@ -390,7 +399,7 @@ footer a {
     place-self: center;
 }
 
-.cardHover {
+/* .cardHover {
     height: 282px;
     padding: 15px;
     display: grid;
@@ -406,11 +415,11 @@ footer a {
 .cardHover:hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.7);
-}
+} */
 
 /* ALTERNATE CARD HOVER (PAIRED WITH JQUERY,
 USE ONLY .cardHover and .cardHover p) */
-/* .cardHover {
+.cardHover {
     height: 15%;
     padding: 15px;
     display: grid;
@@ -425,37 +434,52 @@ USE ONLY .cardHover and .cardHover p) */
 .cardHover p {
     display: none;
     transition: all .3s ease-in-out
-} */
-/* .casestudyCard:hover .cardHover{
-    height: 100%;
-    transition: all .3s ease-in-out
 }
-.casestudyCard:hover .cardHover p{
-    display: inline;
-    transition: all .3s ease-in-out;
-    animation: fadeIn ease-in-out .3s;
-}
-@keyframes fadeIn{
-    0% {
-        display: inline;
-        opacity: 0;
-    }
-    100% {opacity: 1;}
-} */
+
 
 /* ARTWORK PAGE */
+#mainAreaart {
+    grid-template-areas: "artName" "artBio";
+    background-color: #484848;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/artwork-hp-card@3x.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+#artName {
+    margin: none;
+    padding-left: 0px;
+    align-self: center;
+    grid-area: artName;
+}
+
+#artName h2 {
+    margin: 0;
+}
+
+#artBio {
+    text-align: left;
+    padding-left: 0px;
+    align-self: center;
+    grid-area: artBio;
+}
+
+#artBio h4 {
+    margin: 0;
+}
 
 #artwork {
     margin: 80px 140px 80px 140px;
     width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     column-gap: 20px;
     row-gap: 20px;
     justify-content: center;
     align-content: center;
-    grid-template-areas: "illustration calligraphy" "logoDesign eventBanner";
+    grid-template-areas: "rain illustration" "jesus calligraphy" "logoDesign eventBanner";
 }
 
 #illustrationCard {
@@ -467,36 +491,23 @@ USE ONLY .cardHover and .cardHover p) */
 #calligraphy {
     background-image: url(../images/artwork/caligraphyCard.png), url(../images/alternate_card.png);
     grid-area: calligraphy;
+    background-position: center;
     place-self: center;
 }
 
 #logoDesign {
     background-image: url(../images/artwork/logoCard.png), url(../images/alternate_card.png);
     grid-area: logoDesign;
+    background-position: center;
     place-self: center;
 }
 
 #eventBanner {
     background-image: url(../images/artwork/eventbannerCard.png), url(../images/alternate_card.png);
+    background-position: center;
     grid-area: eventBanner;
     place-self: center;
 }
-
-/* VECTOR ART PAGE */
-
-#vectorIllustration {
-    margin: 80px 140px 80px 140px;
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-content: center;
-    align-content: center;
-    grid-template-areas: "rain budo" "jesus .";
-}
-
 #rainCard {
     background-image: url(../images/artwork/rainCard.png), url(../images/alternate_card.png);
     grid-area: rain;
@@ -515,7 +526,53 @@ USE ONLY .cardHover and .cardHover p) */
     place-self: center;
 }
 
+/* VECTOR ART PAGE */
+/* 
+#vectorIllustration {
+    margin: 80px 140px 80px 140px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "rain budo" "jesus .";
+} */
+
 /* VIDEO PAGE */
+#mainAreavideo {
+    grid-template-areas: "videoName" "videoBio";
+    background-color: #484848;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/video-hp-card@3x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#videoName {
+    margin: none;
+    padding-left: 0px;
+    align-self: center;
+    grid-area: videoName;
+}
+
+#videoName h2 {
+    margin: 0;
+}
+
+#videoBio {
+    text-align: left;
+    padding-left: 0px;
+    align-self: center;
+    grid-area: videoBio;
+}
+
+#videoBio h4 {
+    margin: 0;
+}
+
 
 #video {
     margin: 80px 140px 80px 140px;
