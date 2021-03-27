@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Nick Yamamoto Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/loading.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/secondaryStyle.css" rel="stylesheet" type="text/css">
     <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/secondaryResponsive.css" rel="stylesheet" type="text/css">
 </head>
 
 <header>
@@ -20,7 +23,7 @@
             <li><a href="artwork.html">ARTWORK</a></li>
             <li><a href="video.html">VIDEO</a></li>
             <li><a href="about.html">ABOUT</a></li>
-            <li><a href=#>CONTACT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <div id="hamburgermenu">
             <img class=openMenu src="icons/hamburger-menu.png" alt="menu">
@@ -33,43 +36,137 @@
         <li><a href="artwork.html">ARTWORK</a></li>
         <li><a href="video.html">VIDEO</a></li>
         <li><a href="about.html">ABOUT</a></li>
-        <li><a href=#>CONTACT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
     </ul>
 </header>
 
 <body>
 
-<section class="mainArea">
+<!-- <section class="mainArea">
     <div class="mainLogo">
         <img src="images/mylogo.png" alt="LOGO" class="centerImage logo">
         <h1 class="center">NICK YAMAMOTO</h1>
     </div>
-</section>
-<section class="bio">
-    <h4>Background</h4>
+</section> -->
+<div class="navSpacer"></div>
+<div class="casestudyLayout">
+    <section>
+        <div id="aboutBio">
+            <div class="content1 fullSpanImg">
+                <img src="images/aboutBioImg.png" alt="Image">
+                <h3 class="center" style="font-family: 'Audiowide', cursive; text-align: center; margin-bottom: 0px;">NICK YAMAMOTO</h3>
+            </div>
+            <div class="content2">
+                <h4 class="sectionHead"><b>Background:</b></h4>
+                <p>
+                    Well-rounded creator proficient in graphic design, UX design, and video editing. Professional experience in media
+                    advertising and marketing. Graduate of University of Southern California (USC) with a BA in East Asian Languages and
+                    Cultures and a marketing minor as well as a certificate in UX/UI from University of California, Irvine (UCI). Highly
+                    adaptable learner and team player who seeks to accomplish all projects in an efficient and client-centric manner.
+                </p>
+            </div>
+            <div class="content3">
+                <h4 class="sectionHead"><b>Skills & Tools:</b></h4>
+                <div class="tabContainer">
+                    <div class="tabBar">
+                      <div class="tab tab1 active"><h6><b>UX Design</b></h6></div>
+                      <div class="tab tab2"><h6><b>Artwork</b></h6></div>
+                      <div class="tab tab3"><h6><b>Video</b></h6></div>
+                    </div>
+                    <div class="grid" id="tabContent1">
+                      <h6>Skills:</h6>
+                      <ul>
+                        <li>User Research / User Testing</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>HTML / CSS</li>
+                      </ul>
+                      <h6>Tools:</h6>
+                      <ul>
+                        <li>Adobe XD</li>
+                        <li>Invision</li>
+                        <li>Figma</li>
+                        <li>Miro</li>
+                      </ul>
+                    </div>
+                    <div class="grid" id="tabContent2">
+                        <h6>Skills:</h6>
+                        <ul>
+                            <li>Vector Illustration</li>
+                            <li>Graphic Design</li>
+                            <li>Calligraphy Brushwork</li>
+                        </ul>
+                        <h6>Tools:</h6>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Affinity Photo</li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="grid" id="tabContent3">
+                        <h6>Skills:</h6>
+                        <ul>
+                            <li>Writing</li>
+                            <li>Directing</li>
+                            <li>Editing</li>
+                        </ul>
+                        <h6>Tools:</h6>
+                        <ul>
+                            <li>Adobe Premiere</li>
+                            <li>Final Cut Pro</li>
+                            <li>Adobe After Effects</li>
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="dividerLine"></div>
+    <h4 class="sectionHead"><b>Where it all began:</b></h4>
+    <section id="beginning">
+        <div class="content1">
+            <br>
+            <p><i>“An elegant weapon for a more civilized age”</i>
+                <br><br>
+                I will never forget the sense of wonder, excitement, and possibility I felt the first time I saw it on screen.
+                I wanted to know how the blades appeared on screen, which drove me to learn about motion graphics and later set me
+                into explorations in graphic design and vector illustration. The staging of the epic duels made me want to learn
+                more about the film-making process which led to writing and directing my own video projects. As more films were
+                released, the diverse set of handle aesthetics piqued my curiosity into the design choices which has prompted me to
+                always ask "why?” in my UX projects.
+                <br><br>
+                To this day, I attribute many of my interests and hobbies such as martial arts, film-making, and design to
+                have been inspired by the lightsaber. Ever since seeing it on screen for the first time, my creative gears have constantly been in motion and they
+                have not stopped since.
+            </p>
+        </div>
+        <div class="content2 fullSpanImg">
+            <img src="images/lightsaber.png" alt="lightsaber">
+        </div>
+    </section>
+    <div class="dividerLine"></div>
+    <section>
+        <h4 class="sectionHead"><b>Curious about the logo?</b></h4>
     <p>
-        Well-rounded creator with experience in graphic design, UX design, and video editing. Graduate of University of Southern California with a BA in East Asian Languages and Culture and a minor in marketing as well as a certificate in UX/UI from University of California, Irvine. Highly adaptable learner and team player who always looks to accomplish tasks in the most efficient manner.
+        In a nod to my heritages, the logo is meant to be reminiscent of Chinese seal stamps you find on official documents or artwork. The two characters are a combination of my Chinese surname and the first character in my Japanese surname. In many asian cultures, the color red represents good fortune, happiness, and prosperity; things I hope to share through my creative work regardless of which medium I am working in.
     </p>
-    <br>
-    <h4>Tools:</h4>
-    <ul>
-        <li>
-            <b>UX Design:</b> Adobe XD, InVision, Figma, Miro
-        </li>
-        <li>
-            <b>Artwork:</b> Photoshop, Illustrator, Affinity Photo
-        </li>
-        <li>
-            <b>Video:</b> Adobe Premiere, Final Cut Pro, Adobe After Effects
-        </li>
-    </ul>
+    </section>
+</div>
+
+    <!-- <h4 class="sectionHead">Background</h4>
+    <p>Well-rounded creator with experience in graphic design, UX design, and video editing. Graduate of University of Southern California with a BA in East Asian Languages and Culture and a minor in marketing as well as a certificate in UX/UI from University of California, Irvine. Highly adaptable learner and team player who always looks to accomplish tasks in the most efficient manner.</p>
+    <br> -->
+<!-- 
+<section class="bio">
     <br>
     <h4>Curious about the logo?</h4>
     <p>
         In a nod to my heritages, the logo is meant to be reminiscent of Chinese seal stamps you find on official documents or artwork. The two characters are a combination of my Chinese surname and the first character in my Japanese surname. In many asian cultures, the color red represents good fortune, happiness, and prosperity; things I hope to share through my creative work regardless of which medium I am working in.
     </p>
-</section>
+</section> -->
 
+  
 <footer>
     <div class="contact">
         <h5 class="left">LET'S CONNECT<br><br>nicholas.c.yamamoto@gmail.com <br> (408) 318-3190

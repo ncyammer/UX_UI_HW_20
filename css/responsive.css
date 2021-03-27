@@ -101,6 +101,7 @@
         text-decoration: none;
         padding: 14.5px 0px 14.5px 0px;
     }
+    
     .bio {
         margin: 70px 70px;
         padding: 0;
@@ -208,6 +209,9 @@
     h5 {
         font-size: 16px;
     }
+    h6 {
+        font-size: 16px;
+    }
     p {
         font-size: 16px;
     }
@@ -233,6 +237,9 @@
     }
     .mobilenavigation li {
         padding-left: 14px;
+    }
+    .navSpacer{
+        margin-top:20px
     }
     /* LANDING PAGE */
     .mainArea {

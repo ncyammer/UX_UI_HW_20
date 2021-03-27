@@ -1,4 +1,11 @@
-@media only screen and (min-width: 1450px){}
+@media only screen and (min-width: 1450px){
+    #beginning{
+        grid-template-rows: auto;
+        grid-template-columns: 65% 30%;
+        row-gap: 40px;
+        grid-template-areas: "content1 content2";
+    }
+}
 
 @media only screen and (max-width: 1024px){
     #wbwProblems{
@@ -8,6 +15,18 @@
         column-gap: 20px;
         row-gap: 20px;
         grid-template: "quote1 quote2" "quote3 quote4";
+    }
+    #aboutBio{
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        row-gap: 40px;
+        grid-template-areas: "content1 content2" "content3 content3";
+    }
+    #beginning{
+        grid-template-rows: auto auto;
+        grid-template-columns: 50% 45%;
+        row-gap: 20px;
+        grid-template-areas: "content1 content2" "content1 content1";
     }
 }
 
@@ -69,6 +88,12 @@
         column-gap: 20px;
         grid-template-areas: "content1 content1" "content2 content3";
     }
+    #beginning{
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        row-gap: 20px;
+        grid-template-areas: "content2" "content1";
+    }
 
 
     /*WBW Specific*/
@@ -121,6 +146,13 @@
         row-gap: 20px;
     
     }
+    #aboutBio{
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        row-gap: 20px;
+        grid-template-areas: "content1" "content2" "content3";
+    }
+
 }
 
 
