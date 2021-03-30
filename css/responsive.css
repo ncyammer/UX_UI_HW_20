@@ -76,7 +76,7 @@
     }
     .mobilenavigation {
         list-style-type: none;
-        position: absolute;
+        position: fixed;
         top: 80px;
         left: 0px;
         padding-left: 0px;
@@ -143,7 +143,7 @@
         height: 250px;
         padding: 40px 40px;
         margin: 0;
-        /* margin-top: 80px; */
+        margin-top: 80px;
         grid-template-rows: 20% 80%;
     }
 
@@ -159,17 +159,11 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: "rain" "illustration" "jesus" "calligraphy" "logoDesign" "eventBanner";
     }
-    /* #vectorIllustration {
-        margin: 20px 20px 20px 20px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "rain" "budo" "jesus";
-    } */
     #video {
         margin: 20px 20px 20px 20px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "editingreel" "iwatch" "keikotips" "specialeffects";
+        grid-template-areas: "editingreel" "iwatch" "keikotips" "youLord";
     }
     .casestudyCard {
         margin: 0px auto 0px auto;
@@ -190,6 +184,7 @@
     .cardHover p {
         display: none;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -239,11 +234,11 @@
         padding-left: 14px;
     }
     .navSpacer{
-        margin-top:20px
+        margin-top:76px
     }
     /* LANDING PAGE */
     .mainArea {
-        /* margin-top: 76px; */
+        margin-top: 76px;
         margin-bottom: 20px;
         margin-left: 20px;
         margin-right: 20px;
@@ -293,21 +288,21 @@
     /* UX PAGE */
     #mainAreauxdesign {
         height: 80px;
-        /* margin-top: 56px; */
+        margin-top: 56px;
         grid-template-rows: 1fr;
         grid-template-areas: "uxName";
         padding: 20px;
     }
     #mainAreaart {
         height: 80px;
-        /* margin-top: 56px; */
+        margin-top: 56px;
         grid-template-rows: 1fr;
         grid-template-areas: "artName";
         padding: 20px;
     }
     #mainAreavideo {
         height: 80px;
-        /* margin-top: 56px; */
+        margin-top: 56px;
         grid-template-rows: 1fr;
         grid-template-areas: "videoName";
         padding: 20px;

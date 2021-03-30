@@ -99,7 +99,7 @@ a {
     overflow: hidden;
     background-color: #000000;
     text-align: center;
-    position: relative;
+    position: fixed;
     top: 0px;
     z-index: 1000;
 }
@@ -159,12 +159,13 @@ li a:hover {
 }
 
 .navSpacer{
-    margin-top:40px
+    margin-top:120px
 }
 /* Logo Area */
 
 .mainArea {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin-top: 120px;
     margin-bottom: 40px;
     margin-left: 140px;
     margin-right: 140px;
@@ -313,7 +314,7 @@ footer a {
 .pageBanner{
     height: 300px;
     padding: 40px 140px;
-    /* margin-top: 80px; */
+    margin-top: 80px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
@@ -648,7 +649,7 @@ USE ONLY .cardHover and .cardHover p) */
     row-gap: 20px;
     justify-content: center;
     align-content: center;
-    grid-template-areas: "editingreel iwatch" "keikotips specialeffects";
+    grid-template-areas: "editingreel iwatch" "keikotips youLord";
 }
 
 #editingReelCard {
@@ -669,8 +670,8 @@ USE ONLY .cardHover and .cardHover p) */
     place-self: center;
 }
 
-#specialeffectsCard {
-    background-image: url(../images/alternate_card.png);
-    grid-area: specialeffects;
+#youLord {
+    background-image: url(../images/video/you-lord-card.png), url(../images/alternate_card.png);
+    grid-area: youLord;
     place-self: center;
 }

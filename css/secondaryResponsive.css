@@ -36,6 +36,7 @@
     .secondaryPageHeader{
         text-align: center;
         height: 200px;
+        margin-top: 80px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "pageTitle";
@@ -106,7 +107,7 @@
     .secondaryPageHeader{
         height: 80px;
         padding: 40px 70px;
-        /* margin-top: 56px; */
+        margin-top: 56px;
     }
     .quarterPanel{
         grid-template-columns: 1fr;
