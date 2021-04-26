@@ -151,7 +151,7 @@
         margin: 20px 20px 20px 20px;
         grid-template-columns: 1fr;
         row-gap: 20px;
-        grid-template-areas: "fcccaseStudy" "wbwcaseStudy"
+        grid-template-areas: "opTCcasestudy" "fcccaseStudy" "wbwcaseStudy"
     }
     #artwork {
         margin: 20px 20px 20px 20px;

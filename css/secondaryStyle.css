@@ -77,13 +77,18 @@
     background-size: cover;
     background-position:center;
 }
+#optcBanner{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/optc-card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
 #fccBanner{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/fcc-card.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
 }
-
 #wbwBanner{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/wbw-card.png);
     background-repeat: no-repeat;
